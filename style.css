@@ -24,7 +24,7 @@ html {
     margin: 1rem;
     font-size: 1.5rem;
     padding: 1rem .5rem;
-    transition: all 0.07s;
+    transition: all 0.5s;
     width: 100px;
     text-align: center;
     color: rgb(10, 62, 108);
@@ -33,9 +33,10 @@ html {
 }
 
 .playing {
-    transform: scale(1.1);
+
     border-color:#ffc600;
     box-shadow: 0 0 10px #ffc600;
+    
 }
 
 kbd {
@@ -49,4 +50,5 @@ kbd {
     letter-spacing: .1rem;
     color: darkseagreen;
 }
+
 
