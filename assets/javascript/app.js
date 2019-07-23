@@ -25,9 +25,9 @@ let keys = Array.from(document.querySelectorAll('.key'));
 keys.forEach((key) => (key.addEventListener('transitionend', removeTransition)));
 window.addEventListener('keydown', playSound);
 
-//=================================================================================
-//JS Audio Recording Stuff
-//=================================================================================
+//======================================================================
+//                 JS Audio Recording Stuff  
+//======================================================================
 
 // set up basic variables for app
 var record = document.querySelector('.record');
@@ -84,7 +84,7 @@ if (navigator.mediaDevices.getUserMedia) {
     mediaRecorder.onstop = function (e) {
       console.log("data available after MediaRecorder.stop() called.");
 
-      var clipName = prompt('Name Your Beat!', 'My unnamed beat');
+      var clipName = prompt('Name Yo Beat!', 'My tasty beat!');
       console.log(clipName);
       var clipContainer = document.createElement('article');
       var clipLabel = document.createElement('p');

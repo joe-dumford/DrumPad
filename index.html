@@ -5,80 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- My JS
-    <script type="text/javascript" src="./assets/javascript/app.js"></script> -->
-     <!--FontAwesome-->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- GoogleFonts -->
+    <link href="https://fonts.googleapis.com/css?family=Fascinate&display=swap" rel="stylesheet">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--My CSS-->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>DrumPad</title>
 </head>
 
 <body>
-    
+
     <div class="header">
         <h1>Keyboard Drumpad</h1>
         <h4>"Just Beat it" -M. Jackson</h4>
     </div>
-<!--=================================================================================
+    <!--=================================================================================
 //Audio Recording Stuff
 =================================================================================-->
-<div class="wrapper">
+    <div class="wrapper">
         <section class="main-controls">
-             <canvas class="visualizer" height="60px"></canvas>
-             <div id="buttons">
-                 <button class="record">Rec</button>
-                 <button class="stop">Stop</button>
-             </div>
-         </section>
- 
-         <section 
-             class="sound-clips">
-         </section>
- </div>
+            <canvas class="visualizer" height="60px"></canvas>
+            <div id="buttons">
+                <button class="record">Rec</button>
+                <button class="stop">Stop</button>
+            </div>
+        </section>
+
+        <section class="sound-clips">
+        </section>
+    </div>
 
 
-
-<div class="container">
-    <div class="keys">
-        <div data-key="65" class="key">
-            <kbd>A</kbd>
-            <span class="sound">clap</span>
-        </div>
-        <div data-key="83" class="key">
-            <kbd>S</kbd>
-            <span class="sound">hihat</span>
-        </div>
-        <div data-key="68" class="key">
-            <kbd>D</kbd>
-            <span class="sound">kick</span>
-        </div>
-        <div data-key="70" class="key">
-            <kbd>F</kbd>
-            <span class="sound">openhat</span>
-        </div>
-        <div data-key="71" class="key">
-            <kbd>G</kbd>
-            <span class="sound">boom</span>
-        </div>
-        <div data-key="72" class="key">
-            <kbd>H</kbd>
-            <span class="sound">ride</span>
-        </div>
-        <div data-key="74" class="key">
-            <kbd>J</kbd>
-            <span class="sound">snare</span>
-        </div>
-        <div data-key="75" class="key">
-            <kbd>K</kbd>
-            <span class="sound">tom</span>
-        </div>
-        <div data-key="76" class="key">
-            <kbd>L</kbd>
-            <span class="sound">tink</span>
+    <!-- MY NOISE MAKERS -->
+    <div class="container">
+        <div class="keys">
+            <div data-key="65" class="key">
+                <kbd>A</kbd>
+                <span class="sound">clap</span>
+            </div>
+            <div data-key="83" class="key">
+                <kbd>S</kbd>
+                <span class="sound">hihat</span>
+            </div>
+            <div data-key="68" class="key">
+                <kbd>D</kbd>
+                <span class="sound">kick</span>
+            </div>
+            <div data-key="70" class="key">
+                <kbd>F</kbd>
+                <span class="sound">openhat</span>
+            </div>
+            <div data-key="71" class="key">
+                <kbd>G</kbd>
+                <span class="sound">boom</span>
+            </div>
+            <div data-key="72" class="key">
+                <kbd>H</kbd>
+                <span class="sound">ride</span>
+            </div>
+            <div data-key="74" class="key">
+                <kbd>J</kbd>
+                <span class="sound">snare</span>
+            </div>
+            <div data-key="75" class="key">
+                <kbd>K</kbd>
+                <span class="sound">tom</span>
+            </div>
+            <div data-key="76" class="key">
+                <kbd>L</kbd>
+                <span class="sound">tink</span>
+            </div>
         </div>
     </div>
-</div>
 
     <!-- MY SOUNDS -->
     <audio data-key="65" src="./assets/sounds/clap.wav"></audio>
@@ -93,20 +92,24 @@
 
 
     <div class="footer">
+        <div class="social">
         <!-- Github -->
-        <a class="waves-effect waves-light btn social github" onclick="window.location.href='http://github.com/joe-dumford'">
-                <i class="fa fa-github"></i></a>
+        <a class="waves-effect waves-light btn social github"
+            onclick="window.location.href='http://github.com/joe-dumford'">
+            <i class="fa fa-github"></i></a>
         <!-- Linkedin -->
         <a class="waves-effect waves-light btn social linkedin"
             onclick="window.location.href='https://www.linkedin.com/in/joe-dumford/'">
-                <i class="fa fa-linkedin"></i></a>
+            <i class="fa fa-linkedin"></i></a>
         <!-- Twitter -->
         <a class="waves-effect waves-light btn social twitter"
             onclick="window.location.href='https://twitter.com/a_dumford'">
-                <i class="fa fa-twitter"></i></a>
+            <i class="fa fa-twitter"></i></a>
+        </div>
     </div>
 
-      <!--My JS-->
-      <script type="text/javascript" src="./assets/javascript/app.js"></script>
+    <!--My JS-->
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
 </body>
+
 </html>

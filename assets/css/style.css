@@ -2,30 +2,43 @@ html {
     font-size: 10px;
     background: url("../image/music-concert.jpg") bottom center;
     background-size: cover;
-  }
+    
+}
 
-  body,html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-  }
-  .header {
+}
+
+h1, h4{
+    font-family: 'Fascinate', cursive;
+    color: darkseagreen;
+}
+
+p{
+    font-family: 'Fascinate', cursive;
+    color: coral;  
+}
+
+.header {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color:rgb(10, 62, 108);
+    background-color: rgb(10, 62, 108);
     border-bottom: 4px solid #ffc600;
     text-align: center;
     min-height: 40px;
-  }
+}
 
-  .keys {
-      display: flex;
-      flex: 1;
-      min-height: 100vh;
-      align-items: center;
-      justify-content: center;
-  }
+.keys {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
 
 .key {
     border: 4px solid black;
@@ -37,14 +50,13 @@ html {
     width: 100px;
     text-align: center;
     color: rgb(10, 62, 108);
-    background: rgba(0,0,0,0.4);
-    text-shadow:0 0 5px black;
+    background: rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 5px black;
 }
 
 .playing {
-    border-color:#ffc600;
+    border-color: #ffc600;
     box-shadow: 0 0 10px #ffc600;
-    
 }
 
 kbd {
@@ -59,41 +71,108 @@ kbd {
     color: darkseagreen;
 }
 
-/* Recording Styles */
+/* Record Feature Styling */
+.wrapper {
+    position: fixed;
+}
+
 .record {
-    color: darkseagreen;
+    color: rgb(10, 62, 108);
+    font-size: 15px;
+    cursor: pointer;
+    background-color: rgb(82, 77, 77);
     border: 1px solid black;
     border-radius: 8px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    margin-top: 50px;
+    margin-top: 25px;
     margin-left: 10px;
+    margin-bottom: 4px;
+    transition: 0.5s;
+}
+
+.record:hover {
+    transition-timing-function: ease-in-out;
+    font-size: 18px;
+    background-color: firebrick;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .stop {
-    color: darkseagreen;
+    color: rgb(10, 62, 108);
+    font-size: 15px;
+    cursor: pointer;
+    background-color: rgb(82, 77, 77);
     border: 1px solid black;
     border-radius: 8px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    margin-top: 50px;
+    margin-top: 25px;
     margin-left: 5px;
+    margin-bottom: 4px;
+    transition: 0.5s;
+}
+
+.stop:hover {
+    transition-timing-function: ease-in-out;
+    font-size: 18px;
+    background-color: #3e8e41;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+
+audio {
+    background-color: rgb(82, 77, 77);
+    border: 1px solid black;
 }
 
 .visualizer {
     visibility: hidden;
-
 }
 
-/* Recording Styles */
+.delete {
+    color: whitesmoke;
+    opacity: 0.5;
+    font-size: 10px;
+    cursor: pointer;
+    background-color: darkred;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 5px;
+    margin-bottom: 4px;
+}
+
+.delete:hover {
+    transition-duration: 0.5s;
+    opacity: 1;
+}
+
+/*END OF Recording Styles */
+
+/* FOOTER STUFF */
+.btn {
+    background-color: darkslategray;
+    color: rgba(240, 248, 255, 0.66);
+    border: 1px solid #3e8e41;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: xx-large;
+    padding: 0 16px;
+}
+
+.btn:hover {
+    transition-duration: 0.5s;
+    opacity: 0.5;
+}
 
 .footer {
     position: fixed;
     width: 100%;
+    padding-top: 5px;
+    padding-bottom: 3px;
     bottom: 0;
-    background-color:rgb(10, 62, 108);
+    background-color: rgb(10, 62, 108);
     border-top: 4px solid #ffc600;
     text-align: center;
     min-height: 40px;
 }
-
 
 
