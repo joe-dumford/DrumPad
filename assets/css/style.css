@@ -50,4 +50,15 @@ kbd {
     color: darkseagreen;
 }
 
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color:rgb(10, 62, 108);
+    border-top: 4px solid #ffc600;
+    text-align: center;
+    min-height: 40px;
+}
+
+
 

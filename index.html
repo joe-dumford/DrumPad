@@ -5,14 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--My JS-->
-    <script type="text/javascript" src="./assets/javascript/app.js"></script>
+    <!-- My JS
+    <script type="text/javascript" src="./assets/javascript/app.js"></script> -->
+     <!--FontAwesome-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--My CSS-->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>DrumPad</title>
 </head>
 
 <body>
+<!--=================================================================================
+//Audio Recording Stuff
+=================================================================================-->
+<div class="wrapper">
+        <section class="main-controls">
+             <canvas class="visualizer" height="60px"></canvas>
+             <div id="buttons">
+                 <button class="record"></button>
+                 <button class="stop"></button>
+             </div>
+         </section>
+ 
+         <section 
+             class="sound-clips">
+         </section>
+ </div>
+
+
+
+
+
 <div class="container">
     <div class="keys">
         <div data-key="65" class="key">
@@ -54,6 +77,7 @@
     </div>
 </div>
 
+    <!-- MY SOUNDS -->
     <audio data-key="65" src="./assets/sounds/clap.wav"></audio>
     <audio data-key="83" src="./assets/sounds/hihat.wav"></audio>
     <audio data-key="68" src="./assets/sounds/kick.wav"></audio>
@@ -64,5 +88,22 @@
     <audio data-key="75" src="./assets/sounds/tom.wav"></audio>
     <audio data-key="76" src="./assets/sounds/tink.wav"></audio>
 
+
+    <div class="footer">
+        <!-- Github -->
+        <a class="waves-effect waves-light btn social github" onclick="window.location.href='http://github.com/joe-dumford'">
+                <i class="fa fa-github"></i></a>
+        <!-- Linkedin -->
+        <a class="waves-effect waves-light btn social linkedin"
+            onclick="window.location.href='https://www.linkedin.com/in/joe-dumford/'">
+                <i class="fa fa-linkedin"></i></a>
+        <!-- Twitter -->
+        <a class="waves-effect waves-light btn social twitter"
+            onclick="window.location.href='https://twitter.com/a_dumford'">
+                <i class="fa fa-twitter"></i></a>
+    </div>
+
+      <!--My JS-->
+      <script type="text/javascript" src="./assets/javascript/app.js"></script>
 </body>
 </html>
