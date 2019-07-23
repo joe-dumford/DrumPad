@@ -101,9 +101,9 @@ if (navigator.mediaDevices.getUserMedia) {
       } else {
         clipLabel.textContent = clipName;
       }
-
-      clipContainer.appendChild(audio);
+      //Appending the Audio file, it's Title and the Delete button.
       clipContainer.appendChild(clipLabel);
+      clipContainer.appendChild(audio);
       clipContainer.appendChild(deleteButton);
       soundClips.appendChild(clipContainer);
 

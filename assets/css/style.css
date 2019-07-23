@@ -1,8 +1,7 @@
 html {
     font-size: 10px;
     background: url("../image/music-concert.jpg") bottom center;
-    background-size: cover;
-    
+    background-size: cover; 
 }
 
 body,
@@ -17,17 +16,13 @@ h1, h4{
     color: darkseagreen;
 }
 
-p{
-    font-family: 'Fascinate', cursive;
-    color: coral;  
-}
-
 .header {
     position: fixed;
     width: 100%;
     top: 0;
     background-color: rgb(10, 62, 108);
     border-bottom: 4px solid #ffc600;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.578);
     text-align: center;
     min-height: 40px;
 }
@@ -45,6 +40,7 @@ p{
     border-radius: 5px;
     margin: 1rem;
     font-size: 1.5rem;
+    font-family: 'Fascinate';
     padding: 1rem .5rem;
     transition: all 0.5s;
     width: 100px;
@@ -77,13 +73,14 @@ kbd {
 }
 
 .record {
-    color: rgb(10, 62, 108);
+    color: darkseagreen;
     font-size: 15px;
+    font-family: 'Fascinate', cursive;
     cursor: pointer;
     background-color: rgb(82, 77, 77);
     border: 1px solid black;
     border-radius: 8px;
-    margin-top: 25px;
+    margin-top: 30px;
     margin-left: 10px;
     margin-bottom: 4px;
     transition: 0.5s;
@@ -97,13 +94,14 @@ kbd {
 }
 
 .stop {
-    color: rgb(10, 62, 108);
+    color: darkseagreen;
     font-size: 15px;
+    font-family: 'Fascinate', cursive;
     cursor: pointer;
     background-color: rgb(82, 77, 77);
     border: 1px solid black;
     border-radius: 8px;
-    margin-top: 25px;
+    margin-top: 30px;
     margin-left: 5px;
     margin-bottom: 4px;
     transition: 0.5s;
@@ -116,12 +114,21 @@ kbd {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
 }
-
-
-audio {
+ 
+p {
+    font-family: 'Fascinate', cursive;
+    text-align: center;
+    width: 78px;
+    color: coral;  
+    margin-left: 120px;
     background-color: rgb(82, 77, 77);
     border: 1px solid black;
-}
+    border-radius: 8px;
+} 
+
+audio {
+    margin-left: 5px;
+} 
 
 .visualizer {
     visibility: hidden;
@@ -129,19 +136,22 @@ audio {
 
 .delete {
     color: whitesmoke;
+    transition: 0.5s;
     opacity: 0.5;
     font-size: 10px;
+    font-family: 'Fascinate', cursive;
     cursor: pointer;
     background-color: darkred;
     border: 1px solid black;
     border-radius: 8px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-left: 5px;
-    margin-bottom: 4px;
+    
 }
 
 .delete:hover {
-    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    font-size: 13px;
     opacity: 1;
 }
 
